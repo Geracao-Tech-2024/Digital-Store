@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route  path='/' element={<Layout children={HomePage} />} exact/>
-          <Route path='/sobre' element={<Layout children={HomePage} />}/>
+          {/* <Route path='/sobre' element={<Layout children={HomePage} />}/> */}
           {/* possivel melhoria PAGINA 404 */}
           {/* <Route  path='/*' element={<Layout children={()=> (<><h1>404 NOT FOUND</h1></>)} />}/> */}
         </Routes>
