@@ -1,5 +1,5 @@
 // import "./banner.css"
-import "./productListing.css"
+import "./ProductListing.css"
 
 
 
