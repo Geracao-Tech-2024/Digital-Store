@@ -1,15 +1,13 @@
 import './App.css'
-import styled from 'styled-components'
 import HomePage from './pages/HomePage/HomePage'
-import ProductListing from './components/ProductListing/ProductListing'
+import Layout from './pages/Layout/Layout'
 
 function App() {
 
 
   return (
-    <div>
-        <HomePage/> 
-        
+    <div> 
+        <Layout children={HomePage}/>
     </div>
   )
 }
