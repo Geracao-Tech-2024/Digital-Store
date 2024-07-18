@@ -1,10 +1,17 @@
 import React from 'react';
-import ProductCard from '../../components/ProductCard/ProductCard';
+import Gallery from './../../components/Gallery/Gallery';
+
 // IMPORTANTE!: nome da classe em maiusculo
 function HomePage(){
+  let imgs = [
+      {src: 'sapato-banner.svg'},
+      {src: 'sapato-banner.svg'},
+      {src: 'sapato-banner.svg'},
+      {src: 'sapato-banner.svg'}
+    ]
   return (
     <div>
-        <ProductCard/>
+        <Gallery images={imgs}/>
     </div>
   );
 };
