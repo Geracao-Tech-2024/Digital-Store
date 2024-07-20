@@ -1,0 +1,160 @@
+.text-small-bold-warning {
+    color: var(--warning);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    text-align: left;
+
+    margin-bottom: 20px;
+
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+
+
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navegacao{
+    position: relative;
+    top: -30px;
+}
+/* limita o tamanho da imagem */
+/* .slide img {
+    width: 100%;
+    display: block;
+} */
+
+
+
+.nav-dot {
+    height: 10px;
+    width: 10px;
+
+    margin: 0 5px;
+    background-color: var(--light-gray-2);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-dot.active {
+    background-color: var(--primary);
+}
+
+.item-slide {
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.info {
+    width: 530px;
+    height: 352px;
+
+    max-width: 530px;
+    max-height: 352px;
+
+    top: 318px;
+    left: 100px;
+    gap: 0px;
+    opacity: 0px;
+    /*     
+    text-shadow: rgba(255, 255, 255, 0.218) 3px 0 50px; */
+}
+
+.info>h1 {
+
+    font-family: Inter;
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 66px;
+    letter-spacing: 0.9999998807907104px;
+    text-align: left;
+
+    margin-bottom: 20px;
+
+}
+
+.text-medium {
+
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.75px;
+    text-align: left;
+
+    margin-bottom: 40px;
+    max-width: 510px;
+    max-height: 352px;
+
+}
+
+.btn-ofertas {
+    width: 220px;
+    height: 48px;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 10px;
+    background-color: var(--primary);
+    border: none;
+    color: var(--light-gray-3);
+}
+
+.text-small-bold {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    text-align: center;
+}
+
+.banner-item-slide {
+    position: relative;
+}
+
+.banner-img {
+
+    /* width: 100%; */
+    z-index: -1;
+}
+
+.previewSlides {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 27.99px;
+}
+
+.item-produto {
+    width: 117px;
+    height: 95px;
+    top: 865px;
+    left: 391.59px;
+    gap: 0px;
+    border-radius: 4px;
+    opacity: 0px;
+}
+.item-produto.active{
+    border: 2px solid var(--primary)
+}
