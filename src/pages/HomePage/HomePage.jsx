@@ -13,14 +13,14 @@ function HomePage(){
       // {src: 'home-slide-7.jpeg'},
       // {src: 'home-slide-8.jpeg'}
       {src: 'produc-image-1.jpeg'},
-      {src: 'produc-image-1.jpeg'},
-      {src: 'produc-image-1.jpeg'},
-      {src: 'produc-image-1.jpeg'},
-      {src: 'produc-image-1.jpeg'},
+      {src: 'produc-image-2.jpeg'},
+      {src: 'produc-image-3.jpeg'},
+      {src: 'produc-image-4.jpeg'},
+      {src: 'produc-image-5.jpeg'},
     ]
   return (
     <div>
-        <Gallery images={imgs} radius={'10px'} width={'50%'} height={'50%'} showThumbs />
+        <Gallery images={imgs} radius='0' width='700' height='500' showThumbs/>
     </div>
   );
 };
