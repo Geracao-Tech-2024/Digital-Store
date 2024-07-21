@@ -24,7 +24,37 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
             ></div>
         ));
     }
+    const Banner = styled.div`
+    position: relative;
+    background-image: url(${props => props.src});
+    width: ${width != undefined ? width + 'px' : '100vw'}; 
+    height: ${height != undefined ? height + 'px' : 'auto'};
+    background-size: cover; 
+    background-position: center; 
+    border-radius: ${radius}px;
+`;
 
+    const PreviewSlides = styled.div`
+    width: ${width}px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 27.99px;
+    overflow: hidden;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+`;
+    function showDotsImage() {
+        return (
+            <PreviewSlides ref={previewRef}>
+                {images.map((image, idx) => (
+                    <img src={image.src} className={`item-produto ${idx == index ? 'active' : ''}`} onClick={() => setIndex(idx)} alt="item produto" draggable="false" id={`img-item-dot-${idx}`} key={idx} />
+                ))}
+            </PreviewSlides>)
+    }
     useEffect(() => {
         const slides = document.querySelector('.slides');
         slides.style.transform = `translateX(-${index * 100}%)`;
@@ -50,42 +80,6 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
         };
     }, []);
 
-    const Banner = styled.div`
-        position: relative;
-        background-image: url(${props => props.src});
-        width: ${width != undefined ? width + 'px' : '100vw'}; 
-        height: ${height != undefined ? height + 'px' : 'auto'};
-        background-size: cover; 
-        background-position: center; 
-        border-radius: ${radius}px;
-    `;
-
-    const PreviewSlides = styled.div`
-        width: ${width}px;
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 27.99px;
-        overflow: hidden;
-        overflow-x: scroll;
-        &::-webkit-scrollbar {
-            display: none;
-        }
-    `;
-    function showDotsImage() {
-        return (
-            <PreviewSlides ref={previewRef}>
-                {images.map((image, idx) => (
-                    <img src={image.src} className={`item-produto ${idx == index ? 'active' : ''}`} onClick={() => setIndex(idx)} alt="item produto" draggable="false" id={`img-item-dot-${idx}`} key={idx} />
-                ))}
-            </PreviewSlides>)
-    }
-
-    const Slider = styled.div`
-        width: ${width};
-        height: ${height};
-    `;
     return (
         <div className="slider">
             <div className="slides">

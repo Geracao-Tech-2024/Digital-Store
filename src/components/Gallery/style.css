@@ -28,15 +28,6 @@
     position: relative;
     top: -30px;
 }
-
-/* limita o tamanho da imagem */
-/* .slide img {
-    width: 100%;
-    display: block;
-} */
-
-
-
 .nav-dot {
     height: 10px;
     width: 10px;
@@ -70,8 +61,7 @@
     left: 100px;
     gap: 0px;
     opacity: 0px;
-    /*     
-    text-shadow: rgba(255, 255, 255, 0.218) 3px 0 50px; */
+
 }
 
 .info>h1 {
