@@ -2,6 +2,7 @@ import React from 'react';
 import Gallery from './../../components/Gallery/Gallery';
 import ProductConection from '../../components/ProductConection/ProductConection';
 import ProductCard from '../../components/ProductCard/ProductCard';
+import Footer from '../../components/Footer/Footer';
 
 // IMPORTANTE!: nome da classe em maiusculo
 function HomePage(){
@@ -20,6 +21,7 @@ function HomePage(){
         <Gallery images={imgs} height='900'/>
         <ProductCard priceDiscount="30" imagem="Mask group.png" name="K-Swiss V8 - Masculino" price="100" />
         <ProductConection/>
+        <Footer/>
     </div>
   );
 };
