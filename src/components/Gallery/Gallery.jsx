@@ -51,6 +51,7 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
     }, []);
 
     const Banner = styled.div`
+        position: relative;
         background-image: url(${props => props.src});
         width: ${width != undefined ? width + 'px' : '100vw'}; 
         height: ${height != undefined ? height + 'px' : 'auto'};
@@ -76,40 +77,18 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
         return (
             <PreviewSlides ref={previewRef}>
                 {images.map((image, idx) => (
-                    <img src={image.src} className={`item-produto ${ idx == index? 'active' : ''}`} onClick={() => setIndex(idx)} alt="item produto"  draggable="false" id={`img-item-dot-${idx}`} key={idx}/>
+                    <img src={image.src} className={`item-produto ${idx == index ? 'active' : ''}`} onClick={() => setIndex(idx)} alt="item produto" draggable="false" id={`img-item-dot-${idx}`} key={idx} />
                 ))}
             </PreviewSlides>)
     }
-    // function showSlideBanner() {
-    //     return (
-    //         <div className="slide" id="slide-0" key={0}>
-    //             <div className="item-slide">
-    //                 <div className="container d-flex flex-row">
-    //                     <div className="row">
-    //                         <div className="col-6 d-flex align-items-center">
-    //                             <div className="info">
-    //                                 <p className="text-small-bold-warning">Melhores ofertas personalizadas</p>
-    //                                 <h1>Queima de stoque Nike 🔥</h1>
-    //                                 <p className="text-medium">Consequat culpa exercitation mollit nisi excepteur do do
-    //                                     tempor laboris eiusmod
-    //                                     irure consectetur.</p>
-    //                                 <button className="btn-ofertas text-small-bold">Ver Ofertas</button>
-    //                             </div>
-    //                         </div>
-    //                         <div className="col-6 d-flex align-items-center justify-content-center">
-    //                             <img src={'sapato-banner.svg'} className="banner-img" alt="Nike Air" />
-    //                         </div>
-    //                     </div>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     )
-    // }
 
+    const Slider = styled.div`
+        width: ${width};
+        height: ${height};
+    `;
     return (
-        <div className="slider" width={width}>
+        <div className="slider">
             <div className="slides">
-                {/* {showThumbs != true ? showSlideBanner() : console.log('Arquivos Carregados')} */}
 
                 {images.map((image, idx) => (
                     <div className="slide" id={`slide-${idx}`} key={idx}>
@@ -120,6 +99,8 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
                                     </div>
                                 </div>
                             </div>
+                            <img src={'vectorArrow.svg'} className='arrow prev' onClick={() => previewSlide()} alt="imagem anterior" />
+                            <img src={'vectorArrow.svg'} className='arrow next' onClick={() => nextSlide()} alt="proxima imagem" />
                         </Banner>
                     </div>
                 ))}
