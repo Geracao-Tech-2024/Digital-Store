@@ -1,0 +1,159 @@
+:root{
+    --dark-gray: #1F1F1F;
+     --dark-gray-2: #474747;
+     --dark-gray-3: #666666;
+     --light-gray: #8F8F8F;
+     --light-gray-2: #CCCCCC;
+     --light-gray-3: #F5F5F5;
+     --white: #FFFFFF;
+     --off-green: #E7FF86;
+ }
+ body{
+     background-color: var(--light-gray-3);
+ }
+ 
+ .container{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(4, 1fr);
+     justify-content: center;
+     align-items: center;
+     row-gap: 40px;
+     column-gap: 24px;
+     margin-left: 100px;
+     margin-right: 100px;
+ }
+ 
+ .cardContainer{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     flex-direction: row;
+     width: 292px;
+     height: 439px;
+     left: 100px;
+     top: 1699px;
+ }
+ 
+ .cardBackground{
+     background-color: var(--white);
+     display: flex;
+     align-items: center;
+     width: 292px;
+     height: 321px;
+     top: 1699px;
+     left: 100px;
+     border-radius: 4px;
+ }
+ 
+ .cardImagem{
+     padding: 39 20.23 41.95 10px;   
+     /* width: 248px;
+     height: 134px; */
+     top: 1862px;
+     left: 90px;
+     /* rotate: -30deg; */
+ }
+ 
+ .desconto {
+     margin: 20px 176px 269px 20px;
+     display: flex;
+     flex-direction: row;
+     position: absolute;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--off-green);
+     width: 96px;
+     height: 32px;
+     border-radius: 29px;
+     padding: 5px 15px 5px 15px;
+     gap: 10px;
+ }
+ 
+ .descontoTexto {
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 22px;
+     letter-spacing: 0.75px;
+     color: #474747;
+     white-space: nowrap; 
+     text-align: center;
+ }
+ 
+ .cardTenis{
+     display: flex;
+     margin-top: 18px;
+     margin-right: 257px;
+     margin-bottom: 0px;
+     /* position: absolute; */
+     /* margin: 2038px 1305px 1682px 100px; */
+     /* margin-top: 339px;
+     width: 35px;
+     height: 24px;
+     left: 100px;
+     top: 2038px; */
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 12px;
+     line-height: 24px;
+     letter-spacing: 0.75px;
+     color: var(--light-gray);
+ 
+ 
+ 
+ }
+ 
+ .nomeProduto{
+     margin-right: 9px;
+     margin-bottom: 0px;
+     width: 283px;
+     height: 38px;
+     left: 100px;
+     top: 2062px;
+     white-space: nowrap;
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 38px;
+     letter-spacing: 0.75px;
+     color: var(--dark-gray-2);
+ }
+ 
+ .preco{
+     margin-right: 11px;
+     text-decoration-line: line-through;
+     width: 63px;
+     height: 38px;
+     left: 103px;
+     top: 2579px;
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 38px;
+     letter-spacing: 0.75px;
+     color: var(--light-gray)
+ 
+  
+ }
+ 
+ .precoMetade{
+     width: 63px;
+     height: 38px;
+     left: 177px;
+     top: 2579px;
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 24px;
+     line-height: 38px;
+     letter-spacing: 0.75px;
+     color: var(--dark-gray);
+ 
+ 
+ 
+ }
