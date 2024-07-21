@@ -3,7 +3,7 @@ import Gallery from '../../components/Gallery/Gallery';
 import BuyBox from '../../components/BuyBox/BuyBox';
 
 // IMPORTANTE!: nome da classe em maiusculo
-function Produto(){
+function PageProduct(){
   let imagensProduto = [
       {src: 'produc-image-1.jpeg'},
       {src: 'produc-image-2.jpeg'},
@@ -43,4 +43,4 @@ function Produto(){
   );
 };
 
-export default Produto;
+export default PageProduct;

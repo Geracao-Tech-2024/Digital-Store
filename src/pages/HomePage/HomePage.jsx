@@ -1,6 +1,6 @@
 import React from 'react';
 import Gallery from './../../components/Gallery/Gallery';
-import BuyBox from '../../components/BuyBox/BuyBox';
+import ProductConection from '../../components/ProductConection/ProductConection';
 
 // IMPORTANTE!: nome da classe em maiusculo
 function HomePage(){
@@ -15,8 +15,9 @@ function HomePage(){
       {src: 'home-slide-8.jpeg'}
     ]
   return (
-    <div className='d-flex' >
+    <div>
         <Gallery images={imgs} height='900'/>
+        <ProductConection/>
     </div>
   );
 };

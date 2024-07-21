@@ -3,7 +3,7 @@ import "./productConection.css"
 
 
 
-export default function ProductConection(){
+function ProductConection(){
     return(
         <div class="continer-fluid  m-5">
             <div class="container text-center">
@@ -66,3 +66,4 @@ export default function ProductConection(){
         </div>
     )
 }
+export default ProductConection;
