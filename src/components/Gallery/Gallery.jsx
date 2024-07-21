@@ -25,14 +25,14 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
         ));
     }
     const Banner = styled.div`
-    position: relative;
-    background-image: url(${props => props.src});
-    width: ${width != undefined ? width + 'px' : '100vw'}; 
-    height: ${height != undefined ? height + 'px' : 'auto'};
-    background-size: cover; 
-    background-position: center; 
-    border-radius: ${radius}px;
-`;
+        position: relative;
+        background-image: url(${props => props.src});
+        width: ${width != undefined ? width + 'px' : '100vw'}; 
+        height: ${height != undefined ? height + 'px' : 'auto'};
+        background-size: cover; 
+        background-position: center; 
+        border-radius: ${radius}px;
+    `;
 
     const PreviewSlides = styled.div`
     width: ${width}px;
@@ -54,6 +54,14 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
                     <img src={image.src} className={`item-produto ${idx == index ? 'active' : ''}`} onClick={() => setIndex(idx)} alt="item produto" draggable="false" id={`img-item-dot-${idx}`} key={idx} />
                 ))}
             </PreviewSlides>)
+    }
+    function showArrowsInPage() {
+        return (
+            <>
+                <img src={'vectorArrow.svg'} className='arrow prev' onClick={() => previewSlide()} alt="imagem anterior" />
+                <img src={'vectorArrow.svg'} className='arrow next' onClick={() => nextSlide()} alt="proxima imagem" />
+            </>
+        )
     }
     useEffect(() => {
         const slides = document.querySelector('.slides');
@@ -93,8 +101,7 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
                                     </div>
                                 </div>
                             </div>
-                            <img src={'vectorArrow.svg'} className='arrow prev' onClick={() => previewSlide()} alt="imagem anterior" />
-                            <img src={'vectorArrow.svg'} className='arrow next' onClick={() => nextSlide()} alt="proxima imagem" />
+                            {showThumbs != true ? null: showArrowsInPage()}
                         </Banner>
                     </div>
                 ))}
