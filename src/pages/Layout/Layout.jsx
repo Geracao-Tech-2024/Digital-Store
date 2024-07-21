@@ -6,9 +6,9 @@ import Header from '../../components/Header/Header';
 function Layout ({ children }) {
     return (
         <div>
-            <Header />
+            {/* <Header /> */}
                 {children()}
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };
