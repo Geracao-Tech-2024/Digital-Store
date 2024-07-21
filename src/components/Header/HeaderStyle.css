@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.boxheader{
+     background-color: var(--white);
+     width: 100%;
+     height: 150px;
+     padding: 10px;
+}
+
+.logo{
+    width: 253px;
+    height: 44px;
+    top: 47px;
+    left: 112px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.inputPesquisa{
+    max-width: 603.72px;
+    min-width: 603.72px;
+    top: 36.72px;
+    left: 414.72px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    opacity: 0.04px;
+    background-color: #66666612;
+    background-image: url('/IconePes.svg');
+    background-size: 20px 20px; 
+    background-position: calc(100% - 10px) center;
+    background-repeat: no-repeat;
+}
+ 
+.estilobotton {
+    width: 123px;
+    height: 39px;
+    top: 47.52px;
+    left: 1212.84px;
+    border-radius: 8px;
+    border: none;
+    gap: 0px;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.navbox {
+    width: 457.64px;
+    height: 31.32px;
+    top: 144.72px;
+    left: 108px;
+    gap: 0px;
+    border-radius: 2.16px 0px 0px 0px;
+    opacity: 0px;
+}
+
+nav{
+    text-decoration:none;
+    color: var(--dark-gray);
+    padding-right: 25px;
+    transition: color 0.3s ease; 
+}
+
+nav.active.navbox{
+    color: var(--primary-color);
+    list-style: inside;
+}
