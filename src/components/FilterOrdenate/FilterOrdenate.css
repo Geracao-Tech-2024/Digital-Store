@@ -1,0 +1,31 @@
+.container {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  /* width: 308px; */
+  height: 60px;
+  color: var(--dark-gray-2);
+}
+
+.container span {
+  color: var(--dark-gray-2);
+  font-weight: lighter;
+}
+
+.ordenacao {
+  padding: 15px;
+  border: 1px solid var(--dark-gray-2);
+  border-radius: 3px;
+}
+
+.ordenacao label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+form select {
+  min-width: 140px;
+  border: none;
+}
