@@ -21,6 +21,7 @@ function HomePage() {
       <Section title='Produtos em alta' textAlign='left' link={{href: '/produto', text: 'Ver todos'}}>
         <ProductConection/>
       </Section>
+      
     </div>
   );
 };
