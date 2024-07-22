@@ -9,16 +9,15 @@
   justify-content: center;
 }
 
+.logo{
+    width: 253px;
+    height: 44px;
+    top: 47px;
+    left: 112px;
+
 .configContainer {
   width: 95vw;
   padding-left: 50px;
-}
-.logo {
-  width: 212px;
-  height: 44px;
-  left: 41px;
-  gap: 0px;
-  opacity: 0px;
 }
 
 .inputPesquisa {
