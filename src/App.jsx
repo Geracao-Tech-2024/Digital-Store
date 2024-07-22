@@ -9,7 +9,7 @@ import PageProduct from './pages/PageProduct/PageProduct';
 
 function App() {
   return (
-    <div>
+    <main>
 
       <BrowserRouter>
         <Routes>
@@ -18,7 +18,7 @@ function App() {
         </Routes>
       </BrowserRouter>
 
-    </div>
+    </main>
   );
 }
 
