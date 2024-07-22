@@ -5,11 +5,11 @@ import Header from '../../components/Header/Header';
 // Definindo o componente de layout
 function Layout ({ children }) {
     return (
-        <div>
+        <main>
             {/* <Header /> */}
                 {children()}
             {/* <Footer /> */}
-        </div>
+        </main>
     );
 };
 
