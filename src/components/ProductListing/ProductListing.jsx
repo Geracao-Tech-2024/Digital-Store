@@ -2,12 +2,15 @@ import React from 'react';
 import ProductCard from '../ProductCard/ProductCard';
 
 // Definindo o componente de ProductListing 
-function ProductListing  ({ products }) {
+function ProductListing({ products }) {
     return (
         <div>
-            <ProductCard/>
+            {products.map(produto => {
+
+                return (<ProductCard imagem={produto.image} name={produto.name} price={produto.price} />)
+            })}
         </div>
     );
 };
 
-export default ProductListing ;
+export default ProductListing;
