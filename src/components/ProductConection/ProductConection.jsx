@@ -1,9 +1,9 @@
 // import "./banner.css"
-import "./productListing.css"
+import "./productConection.css"
 
 
 
-export default function ProductListing(){
+function ProductConection(){
     return(
         <div class="continer-fluid  m-5">
             <div class="container text-center">
@@ -66,3 +66,4 @@ export default function ProductListing(){
         </div>
     )
 }
+export default ProductConection;
