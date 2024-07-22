@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import "./FilterOrdenate.css";
 export default function FilterOrdenate() {
   return (
     <>
