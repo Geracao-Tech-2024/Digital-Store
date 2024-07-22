@@ -1,0 +1,108 @@
+footer {
+    background-color: #1F1F1F;
+    padding: 20px 0; /* Adicionado padding ao footer para espaço interno */
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: 454px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+.footerLogo {
+    margin-top: 72px;
+    margin-left: 4px;
+}
+
+.descricao {
+    margin-top: 35px;
+    width: 307px;
+    height: 78px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.icones {
+    margin-top: 40px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 35.9px;
+}
+
+.infoDiv, .categoriasDiv, .contatoDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 72px; /* Garantir que todos os itens estejam alinhados ao topo */
+
+}
+
+
+
+.infoTitulo, .categoriasTitulo, .contatoTitulo {
+    margin-bottom: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.infoLinks, .categoriasLinks {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.contatoEndereco, .contatoNumero {
+    width: 231px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.copyrightFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 24px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    margin-top: 10px;
+}
+
+.linha {
+    width: 100%;
+    max-width: 1240px; 
+    height: 1px;
+    background: #FFFFFF;
+    opacity: 0.3;
+    margin: 34px auto 23px;
+    border: none; 
+}
