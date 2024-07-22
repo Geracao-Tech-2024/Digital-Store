@@ -3,67 +3,70 @@ import "./productConection.css"
 
 
 
-function ProductConection(){
-    return(
-        <div class="continer-fluid  m-5">
-            <div class="container text-center">
-                <div class="row d-flex gap-3">
-                    <div class="  container-box">
-                        <div class="content-text">
-                            <div class="text-price">
-                                <span>30% OFF</span>
+function ProductConection() {
+    return (
+      
+           
+            <div className="container-geral text-center">
+                <div className="ProductConectionContainer">
+                    <div className="row d-flex justify-content-between">
+                        <div className="  container-box">
+                            <div className="content-text">
+                                <div className="text-price">
+                                    <span>30% OFF</span>
+                                </div>
+                                <div className="text-title">
+                                    <h3>Novo drop Supreme</h3>
+                                </div>
+                                <div className="text-btn">
+                                    <button>Comprar</button>
+                                </div>
+
                             </div>
-                            <div class="text-title">
-                                <h3>Novo drop Supreme</h3>
+                            <div className="img">
+
                             </div>
-                            <div class="text-btn">
-                                <button>Comprar</button>
-                            </div>
-                    
                         </div>
-                        <div class="img">
-                        
+                        <div className=" container-box2">
+                            <div className="content-text">
+                                <div className="text-price">
+                                    <span>30% OFF</span>
+                                </div>
+                                <div className="text-title">
+                                    <h3>Coleção Adidas</h3>
+                                </div>
+                                <div className="text-btn">
+                                    <button>Comprar</button>
+                                </div>
+
+                            </div>
+                            <div className="img2">
+
+                            </div>
+                        </div>
+                        <div className=" container-box3">
+                            <div className="content-text">
+                                <div className="text-price">
+                                    <span>30% OFF</span>
+                                </div>
+                                <div className="text-title">
+                                    <h3>Novo Beats Bass</h3>
+                                </div>
+                                <div className="text-btn">
+                                    <button>Comprar</button>
+                                </div>
+
+                            </div>
+                            <div className="img3">
+
+                            </div>
                         </div>
                     </div>
-                    <div class=" container-box2">
-                        <div class="content-text">
-                            <div class="text-price">
-                                <span>30% OFF</span>
-                            </div>
-                            <div class="text-title">
-                                <h3>Coleção Adidas</h3>
-                            </div>
-                            <div class="text-btn">
-                                <button>Comprar</button>
-                            </div>
-                    
-                        </div>
-                        <div class="img2">
-                        
-                        </div>
-                    </div>
-                    <div class=" container-box3">
-                        <div class="content-text">
-                            <div class="text-price">
-                                <span>30% OFF</span>
-                            </div>
-                            <div class="text-title">
-                                <h3>Novo Beats Bass</h3>
-                            </div>
-                            <div class="text-btn">
-                                <button>Comprar</button>
-                            </div>
-                    
-                        </div>
-                        <div class="img3">
-                            
-                        </div>
-                    </div>
+
                 </div>
 
-            
             </div>
-        </div>
+      
     )
 }
 export default ProductConection;
