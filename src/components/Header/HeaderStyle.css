@@ -10,15 +10,14 @@
 }
 
 .logo{
-    width: 253px;
-    height: 44px;
+    width: 240px;
+    height: 40px;
     top: 47px;
     left: 112px;
 }
 
 .configContainer {
-  width: 95vw;
-  padding-left: 50px;
+  width: 90vw;
 }
 
 .inputPesquisa {
@@ -30,7 +29,7 @@
   border-radius: 8px;
   border: none;
   opacity: 0.04px;
-  background-color: #47474733;
+  background-color: #4747471c;
   background-image: url("/IconePes.svg");
   background-size: 20px 20px;
   background-position: calc(100% - 10px) center;
@@ -45,7 +44,7 @@
   border-radius: 8px;
   border: none;
   gap: 0px;
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   color: var(--white);
 }
 
@@ -64,7 +63,7 @@
 .iconCarrinho{
     width: 16px;
     height: 16px;
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     color: var(--white);
     border-radius: 50%;
     display: flex;
@@ -73,13 +72,13 @@
     font-size: 10px;
     font-weight: bold;
     position: absolute;
-    top: 35px; 
-    right: 150px; 
+    top: 33px; 
+    right: 114px; 
 }
 
 nav a {
   text-decoration: none;
-  padding-right: 25px;
+  margin-right: 15px;
   color: var(--dark-gray-3);
   transition: color 0.3s ease;
 }
@@ -89,7 +88,14 @@ nav.active.navbox {
   list-style: inside;
 }
 
-.link {
-  border: solid 2px black;
-  padding: 1px;
+
+
+.link-active{
+  border-bottom: 3px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: var(--primary);
+  color: var(--primary);
 }
