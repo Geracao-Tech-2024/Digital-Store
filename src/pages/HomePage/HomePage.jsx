@@ -1,8 +1,10 @@
 import React from 'react';
 import Gallery from './../../components/Gallery/Gallery';
 import ProductConection from '../../components/ProductConection/ProductConection';
+
 import Section from '../../components/Section/Section';
 import ProductListing from '../../components/ProductListing/ProductListing';
+
 
 // IMPORTANTE!: nome da classe em maiusculo
 function HomePage() {
