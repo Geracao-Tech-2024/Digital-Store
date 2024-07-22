@@ -1,7 +1,6 @@
 import React from 'react';
 import Gallery from './../../components/Gallery/Gallery';
 import ProductConection from '../../components/ProductConection/ProductConection';
-import Section from '../../components/Section/Section';
 
 // IMPORTANTE!: nome da classe em maiusculo
 function HomePage() {
@@ -17,8 +16,7 @@ function HomePage() {
   ]
   return (
     <div>
-      <Gallery images={imgs} height='900' />
-      <Section title='Produtos em alta' textAlign='left' link={{href: '/produto', text: 'Ver todos'}}>
+        <Gallery images={imgs} height='900'/>
         <ProductConection/>
       </Section>
       
