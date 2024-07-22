@@ -1,10 +1,37 @@
 import React from 'react';
+import "./style.css"
 
-// IMPORTANTE!: nome da classe em maiusculo
-function ProductCard(){
+// IMPORTANTE!: nome da classNamee em maiusculo
+function ProductCard({ imagem, name, price, priceDiscount }) {
+  let Vldesconto = price*(priceDiscount/100);
+  function desconto(){
+    return (
+      <div className="desconto">
+            <div className="descontoTexto" >30% OFF</div>
+
+          </div>
+    )
+  }
   return (
     <div>
-        <h1>este é o ProductCard </h1>
+      <div className="cardContainer">
+
+        <div className="cardBackground">
+          <img className="cardImagem" src={imagem} alt="imagem-produto"/> 
+          {priceDiscount != undefined? desconto(): null }
+
+        </div>
+
+        <p className="cardTenis">Tênis</p>
+        <p className="nomeProduto">{name}</p>
+        <p className="preco">${price}</p>  <p className="precoMetade">${price - Vldesconto}</p>
+
+
+
+      </div>
+
+
+
     </div>
   );
 };

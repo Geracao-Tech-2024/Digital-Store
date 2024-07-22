@@ -1,8 +1,6 @@
-# React + Vite
+# Projeto React + Vite, feito para conclusão da parte de front end do curso de Full-Stack da Digital College
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Link do Figma do projeto: 
+ https://www.figma.com/design/cfb4F7ZXMFQmvmTn3PKI4z/DRIP-STORE---DIGITAL-COLLEGE?node-id=101-2&t=fg7EppJRC8KP8rcR-0
+### Repositorio do desafio: 
+ [https://github.com/Geracao-Tech-2024/Digital-Store](https://github.com/digitalcollegebr/projeto-digital-store)

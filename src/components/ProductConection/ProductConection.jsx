@@ -3,7 +3,7 @@ import "./productListing.css"
 
 
 
-export default function ProductColection(){
+export default function ProductListing(){
     return(
         <div class="continer-fluid  m-5">
             <div class="container text-center">

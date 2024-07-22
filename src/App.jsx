@@ -1,17 +1,22 @@
 import './App.css'
-import styled from 'styled-components'
 import HomePage from './pages/HomePage/HomePage'
-import ProductListing from './components/ProductListing/ProductListing'
+import Layout from './pages/Layout/Layout'
+import { Route, Routes } from "react-router-dom";
+import { BrowserRouter } from 'react-router-dom';
+import PageProduct from './pages/PageProduct/PageProduct';
+
 
 function App() {
-
-
   return (
     <div>
-        <HomePage/> 
-        
+      <BrowserRouter>
+        <Routes>
+          <Route  path='/' element={<Layout children={HomePage} />} exact/>
+          <Route  path='/produto' element={<Layout children={PageProduct} />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }
 
-export default App
+export default App;
