@@ -28,10 +28,10 @@ function Header() {
         <div className='row py-2'>
           <div className='col py-4'>
             <nav>
-              {/* <Link to="/Home" className="link">Home</Link>
+              <Link to="/Home" className="link">Home</Link>
               <Link to="/Produtos" className="link">Produtos</Link>
               <Link to="/Categorias" className="link"></Link>
-              <Link to="/Meus Produtos" className="link"></Link> */}
+              <Link to="/Meus Produtos" className="link"></Link>
             </nav>
           </div>
 
