@@ -35,9 +35,9 @@ function HomePage() {
     <div>
       <Gallery images={imgs} height='900' />
       <ProductConection />
-      <Section>
+      {/* <Section>
         <ProductListing products={ produtos } />
-      </Section>
+      </Section> */}
     </div>
   );
 };
