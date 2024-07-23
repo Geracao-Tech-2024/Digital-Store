@@ -87,13 +87,20 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
             }
         };
     }, []);
-
-    return (
-        <div className="slider">
+    const Slider = styled.div`
+        overflow: hidden;
+        width: 100%;
+        max-width: ${width};
+    `
+    const Slide = styled.div`
+        max-width: ${width};
+    `
+    return (    
+        <Slider>
             <div className="slides">
 
                 {images.map((image, idx) => (
-                    <div className="slide" id={`slide-${idx}`} key={idx}>
+                    <Slide className="slide" id={`slide-${idx}`} key={idx}>
                         <Banner src={image.src}>
                             <div className="item-slide">
                                 <div className="container d-flex flex-row">
@@ -103,7 +110,7 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
                             </div>
                             {showThumbs != true ? null: showArrowsInPage()}
                         </Banner>
-                    </div>
+                    </Slide>
                 ))}
             </div>
 
@@ -114,6 +121,6 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
 
             </div>
 
-        </div>
+        </Slider>
     );
 }

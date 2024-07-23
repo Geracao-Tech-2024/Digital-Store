@@ -44,7 +44,6 @@
 }
 
 .item-slide {
-    max-width: 100vw;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -157,8 +156,4 @@
     top: 50%;
     right: 16px;
     transform: translate(0, -50%);
-}
-.slider{
-    overflow: hidden;
-    width: 100%;
 }
