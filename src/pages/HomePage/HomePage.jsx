@@ -1,29 +1,30 @@
-import React from 'react';
-import Gallery from './../../components/Gallery/Gallery';
-import ProductConection from '../../components/ProductConection/ProductConection';
+import React from "react";
+import Gallery from "./../../components/Gallery/Gallery";
+import ProductConection from "../../components/ProductConection/ProductConection";
 
-import Section from '../../components/Section/Section';
-import ProductListing from '../../components/ProductListing/ProductListing';
-
+import Section from "../../components/Section/Section";
+import ProductListing from "../../components/ProductListing/ProductListing";
+import FilterOrdenate from "../../components/FilterOrdenate/FilterOrdenate";
+import CollectionIcons from "../../components/CollectionIcons/CollectionIcons";
 
 // IMPORTANTE!: nome da classe em maiusculo
 function HomePage() {
   let imgs = [
-    { src: 'home-slide-1.jpeg' },
-    { src: 'home-slide-2.jpeg' },
-    { src: 'home-slide-3.jpeg' },
-    { src: 'home-slide-4.jpeg' },
-    { src: 'home-slide-5.jpeg' },
-    { src: 'home-slide-6.jpeg' },
-    { src: 'home-slide-7.jpeg' },
-    { src: 'home-slide-8.jpeg' }
-  ]
+    { src: "home-slide-1.jpeg" },
+    { src: "home-slide-2.jpeg" },
+    { src: "home-slide-3.jpeg" },
+    { src: "home-slide-4.jpeg" },
+    { src: "home-slide-5.jpeg" },
+    { src: "home-slide-6.jpeg" },
+    { src: "home-slide-7.jpeg" },
+    { src: "home-slide-8.jpeg" },
+  ];
   let produtos = [
     {
       name: "Nome do produto 1",
       image: "product-thumb-1.jpeg",
       price: 200,
-      priceDiscount: 50
+      priceDiscount: 50,
     },
     {
       name: "Nome do produto 1",
@@ -55,6 +56,7 @@ function HomePage() {
     },
     {
       name: "Nome do produto 2",
+
       image: "product-thumb-2.jpeg",
       price: 49.9
     },
@@ -66,13 +68,16 @@ function HomePage() {
   ];
   return (
     <div>
-      <Gallery images={imgs} height='900' />
+      <Gallery images={imgs} height="900" />
       <ProductConection />
-      <Section>
-        <ProductListing products={ produtos } />
-      </Section>
+      {/* <CollectionIcons></CollectionIcons> */}
+      {
+        <Section>
+          <ProductListing products={produtos} />
+        </Section>
+      }
     </div>
   );
-};
+}
 
 export default HomePage;
