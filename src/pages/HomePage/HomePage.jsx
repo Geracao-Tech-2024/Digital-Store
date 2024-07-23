@@ -21,40 +21,48 @@ function HomePage() {
   let produtos = [
     {
       name: "Nome do produto 1",
-      image: "produc-image-1.jpeg",
+      image: "product-thumb-1.jpeg",
+      price: 200,
+      priceDiscount: 50
+    },
+    {
+      name: "Nome do produto 1",
+      image: "product-thumb-2.jpeg",
+      price: 200,
+      priceDiscount: 50
+    },
+    {
+      name: "Nome do produto 1",
+      image: "product-thumb-3.jpeg",
+      price: 200,
+      priceDiscount: 50
+    },
+    {
+      name: "Nome do produto 1",
+      image: "product-thumb-4.jpeg",
       price: 200,
       priceDiscount: 50
     },
     {
       name: "Nome do produto 2",
-      image: "produc-image-1.jpeg",
+      image: "product-thumb-5.jpeg",
       price: 49.9
     },
     {
       name: "Nome do produto 2",
-      image: "produc-image-1.jpeg",
+      image: "product-thumb-1.jpeg",
       price: 49.9
     },
     {
       name: "Nome do produto 2",
-      image: "produc-image-1.jpeg",
+      image: "product-thumb-2.jpeg",
       price: 49.9
     },
     {
       name: "Nome do produto 2",
-      image: "produc-image-1.jpeg",
+      image: "product-thumb-3.jpeg",
       price: 49.9
     },
-    {
-      name: "Nome do produto 2",
-      image: "produc-image-1.jpeg",
-      price: 49.9
-    },
-    {
-      name: "Nome do produto 2",
-      image: "produc-image-1.jpeg",
-      price: 49.9
-    }
   ];
   return (
     <div>

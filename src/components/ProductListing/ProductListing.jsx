@@ -6,27 +6,27 @@ function ProductListing({ products }) {
     const ListingContainer = styled.div`
         display:flex;
         flex-direction: row;
-        width: 100%;
+
         align-items: center;
-        justify-content: center; 
-        .list-produtos{
-            width: 90vw;
+        justify-content: center;
+    `;
+    const Listing = styled.div`
+        width: 90vw;
             display: flex;
             flex-direction:row;
             flex-wrap: wrap;
-            gap: ;
-        }
+            justify-content: space-between;
     `;
     return (
         <ListingContainer>
-            <div className="list-produtos">
+            <Listing>
 
                 {products.map(produto => {
                     return (
                         <ProductCard imagem={produto.image} name={produto.name} price={produto.price} {...(produto.priceDiscount && { priceDiscount: produto.priceDiscount })} />
                     )
                 })}
-            </div>
+            </Listing>
         </ListingContainer>
     );
 };
