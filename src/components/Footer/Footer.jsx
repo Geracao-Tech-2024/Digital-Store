@@ -40,11 +40,11 @@ function Footer(){
                     <div className="categoriasDiv">
                         <h1 className="categoriasTitulo">Categorias</h1>
                         <p className="categoriasLinks">
-                            <a>Camisetas</a>
-                            <a>Calças</a>
-                            <a>Bonés</a>
-                            <a>Headphones</a>
-                            <a>Tênis</a>
+                            <a href='#'>Camisetas</a>
+                            <a href='#'>Calças</a>
+                            <a href='#'>Bonés</a>
+                            <a href='#'>Headphones</a>
+                            <a href='#'>Tênis</a>
                         </p>
                     </div>
                 </div>
