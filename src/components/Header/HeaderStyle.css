@@ -15,6 +15,7 @@
     top: 47px;
     left: 112px;
 }
+
 .configContainer {
   width: 90vw;
 }
@@ -28,7 +29,7 @@
   border-radius: 8px;
   border: none;
   opacity: 0.04px;
-  background-color: #4747471c;
+  background-color:var(--personInput);
   background-image: url("/IconePes.svg");
   background-size: 20px 20px;
   background-position: calc(100% - 10px) center;
@@ -56,9 +57,11 @@
   border: 1.5px 0px 0px 0px;
   opacity: 0px;
 }
+
 .configCar{
     position: relative;
 }
+
 .iconCarrinho{
     width: 16px;
     height: 16px;
@@ -71,23 +74,19 @@
     font-size: 10px;
     font-weight: bold;
     position: absolute;
-    top: 33px; 
-    right: 114px; 
+    top: -7px; 
+    right: -10px; 
 }
 
-nav a {
+nav a{
   text-decoration: none;
-  margin-right: 15px;
   color: var(--dark-gray-3);
-  transition: color 0.3s ease;
+  margin-right: 15px;
 }
 
-nav.active.navbox {
-  color: var(--primary-color);
-  list-style: inside;
-}
-
-
+ nav a:hover{
+  color: var(--primary);
+ }
 
 .link-active{
   border-bottom: 3px;
