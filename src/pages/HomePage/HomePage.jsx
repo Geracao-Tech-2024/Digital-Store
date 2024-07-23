@@ -29,6 +29,31 @@ function HomePage() {
       name: "Nome do produto 2",
       image: "produc-image-1.jpeg",
       price: 49.9
+    },
+    {
+      name: "Nome do produto 2",
+      image: "produc-image-1.jpeg",
+      price: 49.9
+    },
+    {
+      name: "Nome do produto 2",
+      image: "produc-image-1.jpeg",
+      price: 49.9
+    },
+    {
+      name: "Nome do produto 2",
+      image: "produc-image-1.jpeg",
+      price: 49.9
+    },
+    {
+      name: "Nome do produto 2",
+      image: "produc-image-1.jpeg",
+      price: 49.9
+    },
+    {
+      name: "Nome do produto 2",
+      image: "produc-image-1.jpeg",
+      price: 49.9
     }
   ];
   return (
