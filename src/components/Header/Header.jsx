@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./HeaderStyle.css"
 
-function Header() {
+function Header(){
   return (
     <header className="boxheader">
       <div className='configContainer'>
@@ -19,10 +19,12 @@ function Header() {
 
           <div className='col d-flex align-items-center'>
             <div className='configCar'>
-              <img src="/public/HeaderCar.svg" alt="Carrinho" />
-            </div>
+              <div>
+                <img src="/public/HeaderCar.svg" alt="Carrinho" />
+                <div className='iconCarrinho'>0</div>
+              </div>
 
-            <div className='iconCarrinho'>0</div>
+            </div>
           </div>
         </div>
 
