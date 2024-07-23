@@ -2,48 +2,48 @@ import "./CollectionIcons.css";
 function CollectionIcons() {
   return (
     <>
-      <div className="titulo">
+      <div className="colection-tittle">
         <h2>Coleções em destaque</h2>
       </div>
       <div className="container">
         <div className="itens">
           <div className="imgBack">
-            <img src="tshirt.png" alt="icone-camisa" />
+            <img className="icons" src="tshirt.png" alt="icone-camisa" />
           </div>
           <div className="sub-titulo">
-            <h3>Camisetas</h3>
+            <p className="subDesc">Camisetas</p>
           </div>
         </div>
         <div className="itens">
           <div className="imgBack">
-            <img src="Pants.png" alt="icone-calça" />
+            <img className="icons" src="Pants.png" alt="icone-calça" />
           </div>
           <div className="sub-titulo">
-            <h3>Calças</h3>
+            <p className="subDesc">Calças</p>
           </div>
         </div>
         <div className="itens">
           <div className="imgBack">
-            <img src="Pants.png" alt="icone-calça" />
+            <img className="icons" src="Pants.png" alt="icone-calça" />
           </div>
           <div className="sub-titulo">
-            <h3>Bonés</h3>
+            <p className="subDesc">Bonés</p>
           </div>
         </div>
         <div className="itens">
           <div className="imgBack">
-            <img src="headphone.png" alt="icone-headset" />
+            <img className="icons" src="headphone.png" alt="icone-headset" />
           </div>
           <div className="sub-titulo">
-            <h3>Headphone</h3>
+            <p className="subDesc">Headphone</p>
           </div>
         </div>
         <div className="itens">
           <div className="imgBack">
-            <img src="tenis.png" alt="icone-tenis" />
+            <img className="icons" src="tenis.png" alt="icone-tenis" />
           </div>
           <div className="sub-titulo">
-            <h3>Tenis</h3>
+            <p className="subDesc">Tenis</p>
           </div>
         </div>
       </div>
