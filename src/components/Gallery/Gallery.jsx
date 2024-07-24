@@ -87,9 +87,13 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
             }
         };
     }, []);
-
+    const Slider = styled.div`
+        max-width: ${width}px;
+        overflow: hidden;
+    
+    `
     return (
-        <div className="slider">
+        <Slider className="slider">
             <div className="slides">
 
                 {images.map((image, idx) => (
@@ -101,7 +105,7 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
                                     </div>
                                 </div>
                             </div>
-                            {showThumbs != true ? null: showArrowsInPage()}
+                            {showThumbs != true ? null : showArrowsInPage()}
                         </Banner>
                     </div>
                 ))}
@@ -114,6 +118,6 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
 
             </div>
 
-        </div>
+        </Slider>
     );
 }
