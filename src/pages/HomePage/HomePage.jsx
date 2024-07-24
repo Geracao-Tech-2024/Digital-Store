@@ -4,8 +4,10 @@ import ProductConection from "../../components/ProductConection/ProductConection
 
 import Section from "../../components/Section/Section";
 import ProductListing from "../../components/ProductListing/ProductListing";
-import FilterOrdenate from "../../components/FilterOrdenate/FilterOrdenate";
 import CollectionIcons from "../../components/CollectionIcons/CollectionIcons";
+
+import styled from "styled-components";
+import Promotion from "../../components/Promotion/promotion";
 
 // IMPORTANTE!: nome da classe em maiusculo
 function HomePage() {
@@ -66,17 +68,24 @@ function HomePage() {
       price: 49.9
     },
   ];
+  const ContainerHomePage = styled.div`
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    background-color: var(--light-gray-3);
+
+  `;
   return (
-    <div>
+    <ContainerHomePage>
       <Gallery images={imgs} height="900" />
       <ProductConection />
-      {/* <CollectionIcons></CollectionIcons> */}
-      {
-        <Section>
-          <ProductListing products={produtos} />
-        </Section>
-      }
-    </div>
+      <CollectionIcons/>
+
+      <Section title={'Produtos em alta'} link={{href: '/produtos', text: 'Ver tordos'}}>
+        <ProductListing products={produtos} />
+      </Section>
+      <Promotion/>
+    </ContainerHomePage>
   );
 }
 

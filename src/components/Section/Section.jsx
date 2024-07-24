@@ -5,6 +5,9 @@ import styled from 'styled-components';
 function Section({ title, textAlign, link, children }) {
   const SectionContainer = styled.section`
       position: relative;
+      width: 90vw;
+      margin: auto;
+      padding-top: 20px;
       h2{
         width:90%;
         text-align: ${textAlign};
