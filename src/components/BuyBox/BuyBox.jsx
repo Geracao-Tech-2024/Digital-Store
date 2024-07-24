@@ -2,7 +2,7 @@ import './buybox.css'
 
 export default function BuyBox(props) {
   return (
-    <div className="container">
+    <div className="containerBuy">
       <div className="by-text">
         <h3>{props.name}</h3> 
         <p>{props.description}</p> 
