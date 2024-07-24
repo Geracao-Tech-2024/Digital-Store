@@ -8,7 +8,7 @@ function Header(){
       <div className='configContainer'>
         <div className='row d-flex align-items-center'>
           <div className='col-10 d-flex justify-content-between'>
-            <img src="/public/logoHeader.svg" alt="LogoDigital" className='logo' />
+            <img src="/logoHeader.svg" alt="LogoDigital" className='logo' />
             <input type="text" placeholder='Pesquisar produto...' className='inputPesquisa' />
             <a href="" className='text-dark d-flex align-items-center'>Cadastra-se</a>
           </div>
@@ -20,7 +20,7 @@ function Header(){
           <div className='col d-flex align-items-center'>
             <div className='configCar'>
               <div>
-                <img src="/public/HeaderCar.svg" alt="Carrinho" />
+                <img src="/HeaderCar.svg" alt="Carrinho" />
                 <div className='iconCarrinho'>0</div>
               </div>
 
