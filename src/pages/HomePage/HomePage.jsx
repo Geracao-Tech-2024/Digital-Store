@@ -73,18 +73,22 @@ function HomePage() {
     align-content: space-around;
     flex-direction: column;
     background-color: var(--light-gray-3);
-
+    .produtoDestaqueImg{
+      margin-bottom: 100px;
+    }
   `;
   return (
     <ContainerHomePage>
       <Gallery images={imgs} height="900" />
-      <ProductConection />
-      <CollectionIcons/>
+      <Section title={'Coleções em destaque'}>
+        <ProductConection />
+      </Section>
+      <CollectionIcons />
 
-      <Section title={'Produtos em alta'} link={{href: '/produtos', text: 'Ver tordos'}}>
+      <Section title={'Produtos em alta'} link={{ href: '/produtos', text: 'Ver tordos' }}>
         <ProductListing products={produtos} />
       </Section>
-      <Promotion/>
+      <Promotion />
     </ContainerHomePage>
   );
 }
