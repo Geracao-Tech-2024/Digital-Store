@@ -3,7 +3,7 @@ import "./FilterOrdenate.css";
 export default function FilterOrdenate() {
   return (
     <>
-      <div className="container">
+      <div className="filterContainer">
         <div className="resultado">
           <h4>
             Resultados para "Tênis" - <span>389 produtos</span>

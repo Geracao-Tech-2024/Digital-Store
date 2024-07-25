@@ -1,18 +1,17 @@
-.container {
-  margin: auto;
+.filterContainer {
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  width: 95vw;
+  width: 90vw;
   height: 60px;
   color: var(--dark-gray-2);
 }
 
-.container span {
+.filterContainer span {
   color: var(--dark-gray-2);
   font-weight: lighter;
-  letter-spacing: 2px;
 }
 
 .ordenacao {

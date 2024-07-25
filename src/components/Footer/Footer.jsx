@@ -1,5 +1,6 @@
 import React from 'react';
 import "./style.css"
+import { Link } from 'react-router-dom';
 
 // IMPORTANTE!: nome da classNamee em maiusculo
 function Footer(){
@@ -27,12 +28,12 @@ function Footer(){
                     <div className="infoDiv">
                         <h1 className="infoTitulo" >Informação</h1>
                         <p className="infoLinks">
-                            <a>Sobre Drip Store</a>
-                            <a>Segurança</a>
-                            <a>Wishlist</a>
-                            <a>Blog</a>
-                            <a>Trabalhe conosco</a>
-                            <a>Meus Pedidos</a>
+                           <Link to="/" className='link'>Sobre Drip Store</Link>
+                           <Link to="/" className='link'>Segurança</Link>
+                           <Link to="/" className='link'>Wishlist</Link>
+                           <Link to="/" className='link'>Blog</Link>
+                           <Link to="/" className='link'>Trabalhe conosco</Link>
+                           <Link to="/" className='link'>Meus Pedidos</Link>
                         </p>
                     </div>
                 </div>
@@ -40,11 +41,11 @@ function Footer(){
                     <div className="categoriasDiv">
                         <h1 className="categoriasTitulo">Categorias</h1>
                         <p className="categoriasLinks">
-                            <a>Camisetas</a>
-                            <a>Calças</a>
-                            <a>Bonés</a>
-                            <a>Headphones</a>
-                            <a>Tênis</a>
+                           <Link to="/" className='link'>Camisetas</Link>
+                           <Link to="/" className='link'>Calças</Link>
+                           <Link to="/" className='link'>Bonés</Link>
+                           <Link to="/" className='link'>Headphones</Link>
+                           <Link to="/" className='link'>Tênis</Link>
                         </p>
                     </div>
                 </div>

@@ -1,14 +1,14 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import "./HeaderStyle.css"
 
-function Header() {
+function Header(){
   return (
     <header className="boxheader">
       <div className='configContainer'>
         <div className='row d-flex align-items-center'>
           <div className='col-10 d-flex justify-content-between'>
-            <img src="/public/logoHeader.svg" alt="LogoDigital" className='logo' />
+            <img src="/logoHeader.svg" alt="LogoDigital" className='logo' />
             <input type="text" placeholder='Pesquisar produto...' className='inputPesquisa' />
             <a href="" className='text-dark d-flex align-items-center'>Cadastra-se</a>
           </div>
@@ -19,17 +19,19 @@ function Header() {
 
           <div className='col d-flex align-items-center'>
             <div className='configCar'>
-              <img src="/public/HeaderCar.svg" alt="Carrinho" />
-            </div>
+              <div>
+                <img src="/HeaderCar.svg" alt="Carrinho" />
+                <div className='iconCarrinho'>0</div>
+              </div>
 
-            <div className='iconCarrinho'>0</div>
+            </div>
           </div>
         </div>
 
         <div className='row py-2'>
           <div className='col py-4'>
             <nav>
-              <Link to="/Home" className="link-active">Home</Link>
+              <Link to="/" className="link-active">Home</Link>
               <Link to="/Produtos" className="link">Produtos</Link>
               <Link to="/Categorias" className="link">Categorias</Link>
               <Link to="/Meus Produtos" className="link">Meus Pedidos</Link>
@@ -40,6 +42,6 @@ function Header() {
       </div>
     </header>
   );
-};
+}
 
 export default Header;

@@ -1,37 +1,44 @@
-body {
-  background-color: var(--light-gray-3);
-}
-
-.titulo {
+.colection-tittle {
   text-align: center;
 }
 
 .container {
   margin: auto;
   display: flex;
-  justify-content: space-around;
-  /* flex-direction: column; */
+  justify-content: center;
   width: 712px;
   height: 138px;
   font-weight: bold;
 }
 
-h3 {
+.subDesc {
   margin-top: 12px;
 }
 
 .imgBack {
+  display: flex;
+  justify-content: center;
   background-color: white;
   border-radius: 50%;
   padding: 20px;
   transition: 0.5s;
+  width: 85px;
+  height: 85px;
+  max-width: 85px;
+  max-height: 85px;
 }
 
 .imgBack:hover {
   box-shadow: 1px 1px 20px var(--light-gray);
 }
 
-img {
+img > .icons {
   width: 66px;
   height: 66px;
+}
+
+.subDesc {
+  color: var(--dark-gray-2);
+  text-align: center;
+  font-size: 14px;
 }
