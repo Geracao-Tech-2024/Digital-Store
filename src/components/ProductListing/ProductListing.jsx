@@ -11,11 +11,11 @@ function ProductListing({ products }) {
         justify-content: center;
     `;
     const Listing = styled.div`
-        width: 90vw;
+            width: 90vw;
             display: flex;
             flex-direction:row;
             flex-wrap: wrap;
-            justify-content: space-between;
+            gap: 20px;
     `;
     return (
         <ListingContainer>
