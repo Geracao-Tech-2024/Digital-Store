@@ -1,8 +1,10 @@
+import { Link, useLocation } from 'react-router-dom';
 
-import { Link } from 'react-router-dom';
 import "./HeaderStyle.css"
 
 function Header() {
+  const location = useLocation();
+
   return (
     <header className="boxheader">
       <div className='configContainer'>
@@ -34,10 +36,11 @@ function Header() {
         <div className='row py-2'>
           <div className='col py-4'>
             <nav>
-              <Link to="/" className="link active">Home</Link>
-              <Link to="/Produtos" className="link">Produtos</Link>
-              <Link to="/Categorias" className="link">Categorias</Link>
-              <Link to="/Meus Produtos" className="link">Meus Pedidos</Link>
+              <Link to="/" className={location.pathname === "/" ? "link active" : "link"}>Home</Link>
+              <Link to="/Produtos" className={location.pathname === "/Produtos" ? "link-active" : "link"}>Produtos</Link>
+              <Link to="/Categorias" className={location.pathname === "/Categorias" ? "link-active" : "link"}>Categorias</Link>
+              <Link to="/Meus Produtos" className={location.pathname === "/Meus Produtos" ? "link-active" : "link"}>Meus Pedidos</Link>
+
             </nav>
           </div>
 
