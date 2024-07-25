@@ -64,7 +64,7 @@
      font-size: 14px;
      line-height: 22px;
      letter-spacing: 0.75px;
-     color: #474747;
+     color: var(--dark-gray-2);
      white-space: nowrap; 
      text-align: center;
  }
