@@ -1,11 +1,7 @@
-.colection-tittle {
-  text-align: center;
-}
-
 .container {
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 712px;
   height: 138px;
   font-weight: bold;
@@ -15,6 +11,10 @@
   margin-top: 12px;
 }
 
+/* .itens {
+  margin-left: 25px;
+} */
+
 .imgBack {
   display: flex;
   justify-content: center;
@@ -22,10 +22,10 @@
   border-radius: 50%;
   padding: 20px;
   transition: 0.5s;
-  width: 85px;
-  height: 85px;
-  max-width: 85px;
-  max-height: 85px;
+  width: 90px;
+  height: 90px;
+  max-width: 90px;
+  max-height: 90px;
 }
 
 .imgBack:hover {

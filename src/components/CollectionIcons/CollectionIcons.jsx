@@ -2,9 +2,6 @@ import "./CollectionIcons.css";
 function CollectionIcons() {
   return (
     <>
-      <div className="colection-tittle">
-        <h2>Coleções em destaque</h2>
-      </div>
       <div className="container">
         <div className="itens">
           <div className="imgBack">
