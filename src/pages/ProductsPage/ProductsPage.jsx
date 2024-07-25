@@ -68,7 +68,7 @@ function ProductsPage() {
             </div>
             <div className="row mt-5">
                 <div className="col">
-
+                    filtro
                 </div>
                 <div className="col-8">
                     <ProductListing products={produtos} />
