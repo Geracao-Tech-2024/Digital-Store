@@ -85,7 +85,7 @@ function HomePage() {
       </Section>
       <CollectionIcons />
 
-      <Section title={'Produtos em alta'} link={{ href: '/produtos', text: 'Ver tordos' }}>
+      <Section title={'Produtos em alta'} link={{ href: '/produtos', text: 'Ver todos' }}>
         <ProductListing products={produtos} />
       </Section>
       <Promotion />
