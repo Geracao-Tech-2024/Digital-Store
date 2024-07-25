@@ -74,7 +74,7 @@
     font-size: 10px;
     font-weight: bold;
     position: absolute;
-    top: -7px; 
+    top: -5px; 
     right: -10px; 
 }
 
@@ -88,7 +88,7 @@ nav a{
   color: var(--primary);
  }
 
-.link-active{
+.active{
   border-bottom: 3px;
   border-top: 0px;
   border-left: 0px;
