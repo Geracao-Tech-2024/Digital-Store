@@ -2,8 +2,13 @@
 # Digital Store
 
 ## Descrição do Projeto
+### Projeto React + Vite, feito para conclusão da parte de front end do curso de Full-Stack da Digital College
 
-O projeto **Digital Store** é focado na criação do Frontend de uma loja online.
+### Link do Figma do projeto: 
+ https://www.figma.com/design/cfb4F7ZXMFQmvmTn3PKI4z/DRIP-STORE---DIGITAL-COLLEGE?node-id=101-2&t=fg7EppJRC8KP8rcR-0
+### Repositorio do desafio: 
+ [https://github.com/Geracao-Tech-2024/Digital-Store](https://github.com/digitalcollegebr/projeto-digital-store)
+
 
 ## Tecnologias
 
@@ -24,16 +29,8 @@ A equipe de desenvolvimento é composta por cinco pessoas, todas atuando como de
 
 Aqui estão algumas imagens relacionadas ao projeto:
 
-![Imagem 1](public/digital store.png)
+![Imagem 1](public/digitalStore.png)
 ![Imagem 2](public/Coleções.png)
 ![Imagem 3](public/ListaProdutos.png)
 ![Imagem 4](public/Produtos.png)
 ![Imagem 5](public/Produto.png)
-
-
-# Projeto React + Vite, feito para conclusão da parte de front end do curso de Full-Stack da Digital College
-
-### Link do Figma do projeto: 
- https://www.figma.com/design/cfb4F7ZXMFQmvmTn3PKI4z/DRIP-STORE---DIGITAL-COLLEGE?node-id=101-2&t=fg7EppJRC8KP8rcR-0
-### Repositorio do desafio: 
- [https://github.com/Geracao-Tech-2024/Digital-Store](https://github.com/digitalcollegebr/projeto-digital-store)
