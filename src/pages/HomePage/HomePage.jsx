@@ -83,7 +83,9 @@ function HomePage() {
       <Section title={'Coleções em destaque'}>
         <ProductConection />
       </Section>
-      <CollectionIcons />
+      <Section title={'Coleções em destaque'} textAlign={'center'}>
+        <CollectionIcons />
+      </Section>
 
       <Section title={'Produtos em alta'} link={{ href: '/produtos', text: 'Ver todos' }}>
         <ProductListing products={produtos} />

@@ -9,7 +9,7 @@ function Section({ title, textAlign, link, children }) {
       margin: auto;
       padding-top: 20px;
       h2{
-        width:90%;
+        width:${link != undefined? '90%' : '100%'};
         text-align: ${textAlign};
         //styleName: Text Large Bold;
         font-family: Inter;
@@ -17,7 +17,6 @@ function Section({ title, textAlign, link, children }) {
         font-weight: 700;
         line-height: 38px;
         letter-spacing: 0.75px;
-        text-align: left;
 
       }
       a{
