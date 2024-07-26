@@ -24,7 +24,9 @@ function ProductCard({ imagem, name, price, priceDiscount }) {
 
         <p className="cardTenis">Tênis</p>
         <p className="nomeProduto">{name}</p>
-        <p className="preco">${price}</p>  <p className="precoMetade">${Vldesconto ? price - Vldesconto : price}</p>
+
+    <p className={ `${priceDiscount != undefined? "preco" : 'd-none'}`}>${price}</p>  <p className="precoMetade">${Vldesconto ? price - Vldesconto : price}</p>
+
 
 
 

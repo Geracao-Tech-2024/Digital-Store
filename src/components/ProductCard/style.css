@@ -35,11 +35,10 @@
  
  .cardImagem{
      padding: 39 20.23 41.95 10px;   
-     /* width: 248px;
-     height: 134px; */
      top: 1862px;
      left: 90px;
-     /* rotate: -30deg; */
+     border-radius: 4px;
+     
  }
  
  .desconto {
@@ -74,13 +73,6 @@
      margin-top: 18px;
      margin-right: 257px;
      margin-bottom: 0px;
-     /* position: absolute; */
-     /* margin: 2038px 1305px 1682px 100px; */
-     /* margin-top: 339px;
-     width: 35px;
-     height: 24px;
-     left: 100px;
-     top: 2038px; */
      font-family: 'Inter';
      font-style: normal;
      font-weight: 700;
