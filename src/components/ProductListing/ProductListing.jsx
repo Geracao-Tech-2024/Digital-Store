@@ -21,9 +21,12 @@ function ProductListing({ products }) {
         <ListingContainer>
             <Listing>
 
-                {products.map(produto => {
+                {products.map((produto, index) => {
                     return (
-                        <ProductCard imagem={produto.image} name={produto.name} price={produto.price} {...(produto.priceDiscount && { priceDiscount: produto.priceDiscount })} />
+                        <div id={`productCard_${index}`} key={index}>
+                            <ProductCard imagem={produto.image} name={produto.name} price={produto.price} {...(produto.priceDiscount && { priceDiscount: produto.priceDiscount })} />
+
+                        </div>
                     )
                 })}
             </Listing>
