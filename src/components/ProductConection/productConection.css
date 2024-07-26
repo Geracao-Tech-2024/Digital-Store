@@ -113,7 +113,7 @@
                 position: absolute;
                 top: 0;
                 right: 0; 
-                background-image: url('camisa.png');
+                background-image: url('../../../public/camisa.png');
                 width: 281px;
                 height: 250px;
                 background-position: center;
@@ -132,7 +132,7 @@
                 position: absolute;
                 top: 0;
                 right: 0; 
-                background-image: url('sapato.png');
+                background-image: url('../../../public/sapato.png');
                 width: 281px;
                 height: 250px;
                 background-position: center;
@@ -148,7 +148,7 @@
                 position: absolute;
                 top: 0;
                 right: 0; 
-                background-image: url('fone.png');
+                background-image: url('../../../public/fone.svg');
                 width: 281px;
                 height: 250px;
                 background-position: center;
