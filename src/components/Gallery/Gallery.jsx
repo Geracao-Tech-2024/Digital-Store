@@ -1,6 +1,7 @@
 import './style.css';
 import styled from 'styled-components';
 import { useEffect, useRef, useState } from "react";
+import { Link } from 'react-router-dom';
 
 export default function Gallery({ images, width, height, radius, showThumbs }) {
     const [index, setIndex] = useState(0);
@@ -37,7 +38,9 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
                                     <p className="text-medium">Consequat culpa exercitation mollit nisi excepteur do do
                                         tempor laboris eiusmod
                                         irure consectetur.</p>
-                                    <button className="btn-ofertas text-small-bold">Ver Ofertas</button>
+                                    <Link to={'/Produtos'}>
+                                        <button className="btn-ofertas text-small-bold">Ver Ofertas</button>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-6 d-flex align-items-center justify-content-center">

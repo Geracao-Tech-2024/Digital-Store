@@ -37,7 +37,7 @@ function Header() {
           <div className='col py-4'>
             <nav>
               <Link to="/" className={location.pathname === "/" ? "link active" : "link"}>Home</Link>
-              <Link to="/Produtos" className={location.pathname === "/Produtos" ? "link active" : "link"}>Produtos</Link>
+              <Link to="/Produtos" className={location.pathname === "/Produtos" || location.pathname === '/Produto'? "link active" : "link"}>Produtos</Link>
               <Link to="/Categorias" className={location.pathname === "/Categorias" ? "link active" : "link"}>Categorias</Link>
               <Link to="/Meus Produtos" className={location.pathname === "/Meus Produtos" ? "link active" : "link"}>Meus Pedidos</Link>
 

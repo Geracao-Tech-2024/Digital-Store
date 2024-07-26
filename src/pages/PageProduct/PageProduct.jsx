@@ -78,7 +78,7 @@ function PageProduct() {
           colors={product.colors}
         />
       </ItemProduto>
-      <Section title={'Produtos Relacionados'} link={{ text: 'Ver todos', href: '/produtos' }}>
+      <Section title={'Produtos Relacionados'} link={{ text: 'Ver todos', href: '/Produtos' }}>
         <ProductListing products={produtos} />
       </Section>
     </PageProductConteiner>

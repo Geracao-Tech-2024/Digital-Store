@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles.css'
 function Promotion() {
     return (
@@ -15,7 +16,9 @@ function Promotion() {
                         <p className="text-small-desktop">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
                         </p>
-                        <button className="btn-ofertas text-small-bold">Ver Ofertas</button>
+                        <Link to={'/Produtos'}>
+                            <button className="btn-ofertas text-small-bold">Ver Ofertas</button>
+                        </Link>
                     </div>
                 </div>
             </div>

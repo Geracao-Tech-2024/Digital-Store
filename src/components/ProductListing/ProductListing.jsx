@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductCard from '../ProductCard/ProductCard';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 // Definindo o componente de ProductListing 
 function ProductListing({ products }) {
     const ListingContainer = styled.div`
@@ -24,7 +25,9 @@ function ProductListing({ products }) {
                 {products.map((produto, index) => {
                     return (
                         <div id={`productCard_${index}`} key={index}>
-                            <ProductCard imagem={produto.image} name={produto.name} price={produto.price} {...(produto.priceDiscount && { priceDiscount: produto.priceDiscount })} />
+                            <Link to={'/Produto'}>
+                                <ProductCard imagem={produto.image} name={produto.name} price={produto.price} {...(produto.priceDiscount && { priceDiscount: produto.priceDiscount })} />
+                            </Link>
 
                         </div>
                     )
