@@ -1,10 +1,8 @@
-
 # Digital Store
 
 ## Descrição do Projeto
 
 ### Projeto React + Vite, feito para conclusão da parte de front end do curso de Full-Stack da Digital College
-
 ## Tecnologias Utilizadas
 
 - **Frontend:**
@@ -22,6 +20,7 @@
 - Node.js e npm instalados
 
 ## Instalação
+
 
 - 1_ clonar o repositorio
 - 2_ npm install // para instalar os nodulos do node
