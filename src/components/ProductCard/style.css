@@ -100,6 +100,7 @@
      line-height: 38px;
      letter-spacing: 0.75px;
      color: var(--dark-gray-2);
+     text-align: start;
  }
  
  .preco{
