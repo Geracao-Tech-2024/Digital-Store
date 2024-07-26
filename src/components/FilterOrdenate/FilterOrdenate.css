@@ -1,0 +1,38 @@
+.filterContainer {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 90vw;
+  height: 60px;
+  color: var(--dark-gray-2);
+}
+
+.filterContainer span {
+  color: var(--dark-gray-2);
+  font-weight: lighter;
+}
+
+.ordenacao {
+  padding: 15px;
+  border: 1px solid var(--dark-gray-2);
+  border-radius: 3px;
+}
+
+.ordenacao label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+form {
+  width: 308px;
+}
+
+form select {
+  color: var(--dark-gray-2);
+  font-size: 16px;
+  min-width: 190px;
+  border: none;
+  letter-spacing: 1px;
+}

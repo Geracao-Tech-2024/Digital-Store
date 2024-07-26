@@ -1,0 +1,44 @@
+.container {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 712px;
+  height: 138px;
+  font-weight: bold;
+}
+
+.subDesc {
+  margin-top: 12px;
+}
+
+/* .itens {
+  margin-left: 25px;
+} */
+
+.imgBack {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  padding: 20px;
+  transition: 0.5s;
+  width: 90px;
+  height: 90px;
+  max-width: 90px;
+  max-height: 90px;
+}
+
+.imgBack:hover {
+  box-shadow: 1px 1px 20px var(--light-gray);
+}
+
+img > .icons {
+  width: 66px;
+  height: 66px;
+}
+
+.subDesc {
+  color: var(--dark-gray-2);
+  text-align: center;
+  font-size: 14px;
+}
