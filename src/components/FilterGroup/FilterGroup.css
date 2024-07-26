@@ -1,0 +1,4 @@
+.filter-itens{
+    display: flex;
+    flex-direction: column;
+}
