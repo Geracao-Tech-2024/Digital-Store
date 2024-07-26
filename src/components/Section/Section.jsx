@@ -6,7 +6,7 @@ function Section({ title, textAlign, link, children }) {
   const SectionContainer = styled.section`
       position: relative;
       width: 90vw;
-      margin: auto;
+      margin: 40px auto;
       padding-top: 20px;
       h2{
         width:${link != undefined? '90%' : '100%'};
