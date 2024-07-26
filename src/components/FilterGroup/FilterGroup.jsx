@@ -11,7 +11,7 @@ export default function FilterGroup({ tittle, options }) {
       </div>
       <div className="filter-itens">
         <input type="checkbox" name={options.text2} id={options.text2} />
-        <label htmlFor={options.text2}>{options.text2}</label>
+        <label htmlFor={options.text}>{options.text2}</label>
       </div>
     </>
   );
