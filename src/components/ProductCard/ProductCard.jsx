@@ -7,7 +7,7 @@ function ProductCard({ imagem, name, price, priceDiscount }) {
   function desconto(){
     return (
       <div className="desconto">
-            <div className="descontoTexto" >30% OFF</div>
+            <div className="descontoTexto" >{priceDiscount}% OFF</div>
 
           </div>
     )
@@ -24,7 +24,7 @@ function ProductCard({ imagem, name, price, priceDiscount }) {
 
         <p className="cardTenis">Tênis</p>
         <p className="nomeProduto">{name}</p>
-        <p className="preco">${price}</p>  <p className="precoMetade">${price - Vldesconto}</p>
+    <p className={ `${priceDiscount != undefined? "preco" : 'd-none'}`}>${price}</p>  <p className="precoMetade">${Vldesconto ? price - Vldesconto : price}</p>
 
 
 
