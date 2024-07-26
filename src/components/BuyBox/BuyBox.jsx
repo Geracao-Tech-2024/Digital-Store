@@ -218,7 +218,9 @@ const BuyBox = (props) => {
                 </div>
                 <Avaliacao>
                     <div className="img">
-                        {/* Renderizar as estrelas */}
+                    {props.stars.map((star, index) => (
+                        <img key={index} src={star} alt="" />
+                    ))} 
                     </div>
                     <div className="notas">
                         <span>{props.rating} <img src="Star-white.svg" alt="" /></span>
