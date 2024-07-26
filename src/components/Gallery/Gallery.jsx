@@ -24,11 +24,37 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
             ></div>
         ));
     }
+    function showSlideBanner() {
+        return (
+            <div className="slide" id="slide-0" key={0}>
+                <div className="item-slide">
+                    <div className=" d-flex flex-row">
+                        <div className="row">
+                            <div className="col-6 d-flex align-items-center">
+                                <div className="info">
+                                    <p className="text-small-bold-warning">Melhores ofertas personalizadas</p>
+                                    <h1>Queima de stoque Nike 🔥</h1>
+                                    <p className="text-medium">Consequat culpa exercitation mollit nisi excepteur do do
+                                        tempor laboris eiusmod
+                                        irure consectetur.</p>
+                                    <button className="btn-ofertas text-small-bold">Ver Ofertas</button>
+                                </div>
+                            </div>
+                            <div className="col-6 d-flex align-items-center justify-content-center">
+                                <img src={'sapato-banner.svg'} className="banner-img" alt="Nike Air" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
     const Banner = styled.div`
         position: relative;
         background-image: url(${props => props.src});
         width: ${width != undefined ? width + 'px' : '100vw'}; 
-        height: ${height != undefined ? height + 'px' : 'auto'};
+        height: ${height != undefined ? height + 'px' : '100%'};
+        background-size: cover;
         background-size: cover; 
         background-position: center; 
         border-radius: ${radius}px;
@@ -95,9 +121,12 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
     return (
         <Slider className="slider">
             <div className="slides">
-
+                {/* primeiro Slide */}
+                {showThumbs != true ? showSlideBanner() : console.log('Arquivos Carregados')}
+                
+                {/* restante */}
                 {images.map((image, idx) => (
-                    <div className="slide" id={`slide-${idx}`} key={idx}>
+                    <div className="slide" id={`slide-${idx+1}`} key={idx+1}>
                         <Banner src={image.src}>
                             <div className="item-slide">
                                 <div className="container d-flex flex-row">

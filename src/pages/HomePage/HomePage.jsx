@@ -79,7 +79,7 @@ function HomePage() {
   `;
   return (
     <ContainerHomePage>
-      <Gallery images={imgs} height="900" />
+      <Gallery images={imgs} />
       <Section title={'Coleções em destaque'}>
         <ProductConection />
       </Section>
