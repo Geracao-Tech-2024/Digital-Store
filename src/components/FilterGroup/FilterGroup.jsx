@@ -8,7 +8,7 @@ export default function FilterGroup({ tittle, options, typeInp }) {
       <div className="filter-itens mt-3">
         {options.map(option => (
           <div className='d-flex mt-1 '>
-            <input type={typeInp} value={options.value} name={option.title} id={option.text} />
+            <input type={typeInp} value={options.value} name={typeInp == 'radio'? tittle : option.text} id={option.text} />
             <label htmlFor={option.text}>{option.text}</label>
           </div>
         ))}
