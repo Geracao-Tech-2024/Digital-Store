@@ -161,3 +161,7 @@
     overflow: hidden;
     width: 100%;
 }
+.containerSlideOne{
+    width: 90vw;
+    margin: auto;
+}

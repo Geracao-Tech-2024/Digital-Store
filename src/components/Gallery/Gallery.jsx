@@ -28,7 +28,7 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
         return (
             <div className="slide" id="slide-0" key={0}>
                 <div className="item-slide">
-                    <div className=" d-flex flex-row">
+                    <div className="containerSlideOne d-flex flex-row">
                         <div className="row">
                             <div className="col-6 d-flex align-items-center">
                                 <div className="info">
@@ -54,7 +54,6 @@ export default function Gallery({ images, width, height, radius, showThumbs }) {
         background-image: url(${props => props.src});
         width: ${width != undefined ? width + 'px' : '100vw'}; 
         height: ${height != undefined ? height + 'px' : '100%'};
-        background-size: cover;
         background-size: cover; 
         background-position: center; 
         border-radius: ${radius}px;
