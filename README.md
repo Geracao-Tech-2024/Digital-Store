@@ -25,10 +25,10 @@ A equipe de desenvolvimento é composta por cinco pessoas, todas atuando como de
 Aqui estão algumas imagens relacionadas ao projeto:
 
 ![Imagem 1](public/digital store.png)
-![Imagem 3](public/Coleções.png)
-![Imagem 2](public/Lista de produtos.png)
-![Imagem 5](public/Produtos.png)
-![Imagem 4](public/Produto.png)
+![Imagem 2](public/Coleções.png)
+![Imagem 3](public/ListaProdutos.png)
+![Imagem 4](public/Produtos.png)
+![Imagem 5](public/Produto.png)
 
 
 # Projeto React + Vite, feito para conclusão da parte de front end do curso de Full-Stack da Digital College
