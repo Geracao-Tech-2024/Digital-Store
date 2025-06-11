@@ -9,20 +9,20 @@ function Header() {
     <header className="boxheader">
       <div className='configContainer'>
         <div className='row d-flex align-items-center'>
-          <div className='col-10 d-flex justify-content-between'>
+          <div className='col-9 d-flex justify-content-between'>
             <Link to="/">
               <img src="/logoHeader.svg" alt="LogoDigital" className='logo' />
             </Link>
 
             <input type="text" placeholder='Pesquisar produto...' className='inputPesquisa' />
-            <a href="" className='text-dark d-flex align-items-center'>Cadastra-se</a>
+            <a href="" className='link-cadastro text-dark'>Cadastra-se</a>
           </div>
 
-          <div className='col'>
+          <div className='col-2 d-flex justify-content-end'>
             <button className='estilobotton'>Entrar</button>
           </div>
 
-          <div className='col d-flex align-items-center'>
+          <div className='col-1 d-flex align-items-center'>
             <div className='configCar'>
               <div>
                 <img src="/HeaderCar.svg" alt="Carrinho" />

@@ -83,13 +83,13 @@ function HomePage() {
       <Section title={'Coleções em destaque'}>
         <ProductConection />
       </Section>
-      <Section title={'Coleções em destaque'} textAlign={'center'}>
+      {/* <Section title={'Coleções em destaque'} textAlign={'center'}>
         <CollectionIcons />
       </Section>
 
       <Section title={'Produtos em alta'} link={{ href: '/Produtos', text: 'Ver todos' }}>
         <ProductListing products={produtos} />
-      </Section>
+      </Section> */}
       <Promotion />
     </ContainerHomePage>
   );
